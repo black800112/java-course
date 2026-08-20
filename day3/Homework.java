@@ -12,6 +12,5 @@ class Homework
             System.out.println("請重新輸入");
         }
 
-        
     }
 }
