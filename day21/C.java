@@ -20,4 +20,9 @@ class C extends Company
     {
         return super.show()+"\tmouse:"+mouse;
     }
+
+    public String toString()
+    {
+        return "位址:"+super.toString();
+    }
 }

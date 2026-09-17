@@ -58,10 +58,26 @@ class Add3
 
         System.out.println("===分隔線2===");
 
-        employee[2][0]=employee[0][0];
+        System.out.println(employee[2][0]);
+		System.out.println(employee[0][0]);
+		System.out.println(employee[2][0].equals(employee[0][0]));
+		//employee[2][0]=employee[0][0];
 
-        System.out.println(employee[2][0].show());
-        System.out.println(employee[0][0].show());
+		System.out.println(employee[2][0].show());
+		System.out.println(employee[0][0].show());
+		System.out.println("===================");
+
+		System.out.println(employee[2][0].toString());
+        //toString為顯示記憶體位址,系統預設值,沒寫也會自動跳
+		System.out.println(employee[0][0]);
+		System.out.println(employee[2][0].equals(employee[0][0]));
+
+        System.out.println("==分隔==");
+        System.out.println(employee[2][0] instanceof Company);
+        //instanceof檢查employee[2][0]跟Company這個class有沒有關係
+        System.out.println(employee[2][0] instanceof C);
+        System.out.println(employee[2][0] instanceof A);
+        //employee[2][0]是new C class,所以跟A class沒有關係
     }
 
 }
